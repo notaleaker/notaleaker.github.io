@@ -82,18 +82,27 @@
         margin-right: 2rem;
       }
 
-      .roblox-pictures {
+      .roblox {
         display: flex;
         justify-content: center;
         margin-bottom: 2rem;
       }
 
-      .roblox-picture {
-        width: 300px;
-        height: 200px;
-        margin: 0 10px;
+      .roblox-container {
+        width: 80%;
+        max-width: 1200px;
+        overflow-y: auto;
+        height: 400px;
+      }
+
+      .roblox-project {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        margin: 5px;
         border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-right: 2rem;
       }
 
       @media (max-width: 768px) {
@@ -113,16 +122,15 @@
           margin-right: 1rem;
         }
 
-        .roblox-picture {
-          width: 100%;
-          height: auto;
+        .roblox-project {
+          margin-right: 1rem;
+        }
+
+        .roblox-container {
+          height: 300px;
         }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>I am a Developer</h1>
-      <p>Contact my Discord to learn more about programming or would like me as a programmer for them.</p>
-      <div class="skills">
-        <div class="skill">Py
