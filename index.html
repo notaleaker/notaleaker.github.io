@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My Game Studio Experience</title>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
     <style>
       body {
         background-color: #000;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 50px 0;
+        text-align: center;
         color: #fff;
-        font-family: Arial, sans-serif;
       }
-      .neon-button {
-        display: inline-block;
+
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      .skills {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+      }
+
+      .skill {
+        background-color: rgba(255, 255, 255, 0.1);
+        color: #fff;
         padding: 10px 20px;
-        margin: 20px;
+        font-size: 1.2rem;
+        margin: 5px;
         border-radius: 5px;
-        border: none;
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
-        background-image: linear-gradient(
-          to bottom right,
-          rgba(255, 255, 255, 0.1),
-          rgba(255, 255, 255, 0.3)
-        );
-        transition: all 0.3s ease-in-out;
       }
-      .neon-button:hover {
-        box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+
+      .discord {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #5865f2;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        margin: 2rem auto;
+        border-radius: 5px;
+        text-decoration: none;
       }
-      .neon-button:active {
-        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+
+      .discord:hover {
+        background-color: #4f5bce;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 3rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Game Studio Experience</h1>
-    <button class="neon-button">Big Game Studio 1</button>
-    <button class="neon-button">Big Game Studio 2</button>
-    <button class="neon-button">Big Game Studio 3</button>
-    <button class="neon-button">Small Game Studio 1</button>
-    <button class="neon-button">Small Game Studio 2</button>
+    <div class="container">
+      <h1>I am a Developer</h1>
+      <p>Contact my Discord to learn more about programming or would like me as a programmer for them.</p>
+      <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">Java</div>
+        <div class="skill">Lua</div>
+        <div class="skill">C++</div>
+      </div>
+      <a class="discord" href="discordapp:notwalksy">Discord: notwalksy</a>
+    </div>
   </body>
 </html>
