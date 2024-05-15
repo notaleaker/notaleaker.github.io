@@ -1,37 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My GitHub Website</title>
+    <title>My Game Studio Experience</title>
     <style>
       body {
+        background-color: #000;
+        color: #fff;
         font-family: Arial, sans-serif;
+      }
+      .neon-button {
+        display: inline-block;
+        padding: 10px 20px;
         margin: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+        background-image: linear-gradient(
+          to bottom right,
+          rgba(255, 255, 255, 0.1),
+          rgba(255, 255, 255, 0.3)
+        );
+        transition: all 0.3s ease-in-out;
       }
-      h1 {
-        color: #333;
+      .neon-button:hover {
+        box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
       }
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      li {
-        margin-bottom: 10px;
+      .neon-button:active {
+        box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
       }
     </style>
   </head>
   <body>
-    <h1>Welcome to my website!</h1>
-    <p>I'm a game developer with experience working at:</p>
-    <ul>
-      <li><strong>Rockstar Games</strong> - Known for their iconic Grand Theft Auto series</li>
-      <li><strong>Ubisoft</strong> - Creators of Assassin's Creed and Far Cry</li>
-      <li><strong>Electronic Arts (EA)</strong> - Publishers of FIFA, Madden, and The Sims</li>
-    </ul>
-    <p>I've also had the opportunity to work with:</p>
-    <ul>
-      <li><strong>Hyperkinetic Studios</strong> - Indie developers of mobile games</li>
-      <li><strong>Whimsy Works</strong> - Small studio behind the popular puzzle game, Blooming Gardens</li>
-    </ul>
+    <h1>Game Studio Experience</h1>
+    <button class="neon-button">Big Game Studio 1</button>
+    <button class="neon-button">Big Game Studio 2</button>
+    <button class="neon-button">Big Game Studio 3</button>
+    <button class="neon-button">Small Game Studio 1</button>
+    <button class="neon-button">Small Game Studio 2</button>
   </body>
 </html>
